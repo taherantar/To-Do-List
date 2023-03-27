@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Sofia+Sans:wght@500&display=swap");
+
+/* *********************************? Global ******************************/
+
+:root {
+  --primary-font: "Cairo", sans-serif;
+  --text-color: #fbfbf2;
+  --ferst-background-color: #6358ee;
+  --socond-background-color: #efd9ce;
+  scroll-behavior: smooth;
+  font-family: Oswald, sans-serif;
+}
+.clearfix {
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: var(--text-color);
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+/* *********************************!  End Global ******************************/
+.input-group {
+  background-image: url(../images/Sight.webp);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+.form {
+  width: 70%;
+}
+.option {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row-reverse;
+}
+#input-task {
+  width: 90%;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#submit {
+  margin-right: 5px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgb(96 93 88);
+  border: none;
+  cursor: pointer;
+  color: #fbfbf2;
+  font-weight: 700;
+}
+#input-task {
+  border: none;
+  padding: 10px;
+}
+
+.lists {
+  background-color: rgb(151, 186, 230);
+  height: 650px;
+  opacity: 75%;
+  border-radius: 15px;
+  width: 80%;
+  margin: 20px;
+}
+.memo {
+  padding: 30px;
+  font-size: 30px;
+}
+ul li {
+  margin: 20px;
+  list-style-type: none;
+  text-transform: capitalize;
+  background-color: rgb(228, 220, 207);
+  padding: 10px;
+}
+button {
+  border-radius: 15px;
+  font-size: 20px;
+}
+@media (min-width: 250px) and (max-width: 800px) {
+  .option {
+    flex-direction: column;
+    align-items: center;
+  }
+  #submit {
+    margin-top: 15px;
+    padding: 15px 50px;
+  }
+  #input-task {
+    text-align: center;
+  }
+}
