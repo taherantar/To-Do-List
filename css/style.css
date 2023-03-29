@@ -10,9 +10,11 @@
   scroll-behavior: smooth;
   font-family: Oswald, sans-serif;
 }
+
 .clearfix {
   clear: both;
 }
+
 h1,
 h2,
 h3,
@@ -24,6 +26,7 @@ h6 {
   color: var(--text-color);
   text-align: center;
 }
+
 * {
   box-sizing: border-box;
   /* border: 1px solid; */
@@ -43,6 +46,7 @@ h6 {
 .form {
   width: 70%;
 }
+
 .option {
   margin-top: 4rem;
   display: flex;
@@ -50,16 +54,18 @@ h6 {
   align-content: center;
   flex-direction: row-reverse;
 }
+
 #input-task {
   width: 90%;
   height: 60px;
   border-radius: 10px;
   box-shadow: none;
   font-size: 20px;
-  text-transform: uppercase;
+  outline: none;
 }
+
 #submit {
-  margin-right: 5px;
+  margin-left: 5px;
   width: 50%;
   border-radius: 10px;
   background-color: rgb(96 93 88);
@@ -68,6 +74,7 @@ h6 {
   color: #fbfbf2;
   font-weight: 700;
 }
+
 #input-task {
   border: none;
   padding: 10px;
@@ -76,15 +83,17 @@ h6 {
 .lists {
   background-color: rgb(151, 186, 230);
   height: 650px;
-  opacity: 75%;
+  /* opacity: 75%; */
   border-radius: 15px;
   width: 80%;
   margin: 20px;
 }
+
 .memo {
   padding: 30px;
   font-size: 30px;
 }
+
 ul li {
   margin: 20px;
   list-style-type: none;
@@ -92,19 +101,42 @@ ul li {
   background-color: rgb(228, 220, 207);
   padding: 10px;
 }
+
 button {
   border-radius: 15px;
   font-size: 20px;
 }
+
+.finished {
+  opacity: .5;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+li i {
+  cursor: pointer;
+}
+
+#counterSpan {
+  font-size: 30px;
+  text-align: center;
+  color: #FFF
+}
+
 @media (min-width: 250px) and (max-width: 800px) {
   .option {
     flex-direction: column;
     align-items: center;
   }
+
   #submit {
     margin-top: 15px;
     padding: 15px 50px;
   }
+
   #input-task {
     text-align: center;
   }
